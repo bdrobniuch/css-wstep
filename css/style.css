@@ -1,0 +1,86 @@
+/**selektor uniwersalny jak target wszystkie elementy*/
+
+/*
+*{
+    color:red;
+}
+*/
+
+/*slektor laczoy -bez spacji moze laczyc np elemento klasie element o klasach itd*/
+
+div.uniwersalny {
+    color:blue;
+}
+
+/*pseudo-elementy - nie ma ich w html*/
+p::before {
+    content: '*';    
+}
+
+p::after {
+    
+    content: 'fwef';
+}
+
+/*font awsome biblioteka z grafikami*/
+
+/*pseudo klasy*/
+
+a:hover {
+    
+    color: green;
+}
+
+/*aktywne pole formularza*/
+
+input:focus {
+    background-color: aqua;
+}
+
+ul li:first-child {
+    color : orange;
+}
+
+ul li:last-child {
+    color: orange;
+}
+
+ul li:first-of-type {
+    color: red;
+}
+
+ul li:nth-of-type(3n+1) {
+    color: yellow;
+}
+
+ul li:nth-last-of-type(odd) 
+{
+    color : grey;
+}
+
+/*selektor atrybutuow*/
+input[title] {
+    border: 2px solid black;
+}
+
+input[title="nowy"] {
+    border: 2px solid red;
+}
+/*zawiera konkretny ciag*/
+input[title~="jest"] {
+    border: 2px solid purple;
+}
+
+/**/
+input[title*="o"] {
+    border: 2px solid green;
+}
+/*zaczyna sie na "1"*/
+input[title^="1"]  {
+    background-color: red;
+}
+
+/*konczy sie na 1*/
+input[title$="1"]  {
+    background-color: green;
+}
