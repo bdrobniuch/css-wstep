@@ -9,16 +9,16 @@
 /*slektor laczoy -bez spacji moze laczyc np elemento klasie element o klasach itd*/
 
 div.uniwersalny {
-    color:blue;
+    color: blue;
 }
 
 /*pseudo-elementy - nie ma ich w html*/
 p::before {
-    content: '*';    
+    content: '*';
 }
 
 p::after {
-    
+
     content: 'fwef';
 }
 
@@ -27,7 +27,7 @@ p::after {
 /*pseudo klasy*/
 
 a:hover {
-    
+
     color: green;
 }
 
@@ -38,7 +38,7 @@ input:focus {
 }
 
 ul li:first-child {
-    color : orange;
+    color: orange;
 }
 
 ul li:last-child {
@@ -53,9 +53,8 @@ ul li:nth-of-type(3n+1) {
     color: yellow;
 }
 
-ul li:nth-last-of-type(odd) 
-{
-    color : grey;
+ul li:nth-last-of-type(odd) {
+    color: grey;
 }
 
 /*selektor atrybutuow*/
@@ -66,8 +65,9 @@ input[title] {
 input[title="nowy"] {
     border: 2px solid red;
 }
+
 /*zawiera konkretny ciag*/
-input[title~="jest"] {
+input[title ~ ="jest"] {
     border: 2px solid purple;
 }
 
@@ -75,12 +75,91 @@ input[title~="jest"] {
 input[title*="o"] {
     border: 2px solid green;
 }
+
 /*zaczyna sie na "1"*/
-input[title^="1"]  {
+input[title^="1"] {
     background-color: red;
 }
 
 /*konczy sie na 1*/
-input[title$="1"]  {
+input[title$="1"] {
     background-color: green;
+}
+
+/*pozycjonowanie*/
+
+.main-container-inner {
+    height: 200px;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.main-container {
+    position: relative;
+}
+
+.gray {
+    background-color: grey;
+}
+
+.orange {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 100%;
+}
+
+#main-nav {
+    /*    position: fixed;*/
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: gray;
+    /*    width: 100%;*/
+    position: sticky;
+}
+
+.jednostki-miary {
+    margin-top: 100px;
+    font-size: 20px;
+}
+
+.jednostki-miary > div {
+    background-color: bisque;
+    margin-bottom: 10px;
+}
+
+
+#piksele {
+    width: 400px;
+}
+
+#em {
+    width: 20em;
+}
+
+
+#procenty{
+    width: 50%;
+}
+
+#vh{
+    height: 10vh;
+}
+
+.w-inner{
+      float: left;
+}
+.wyswietlanie .w-inner {
+ 
+    display:inline-block;
+    height: 300px;
+    background-color: red;
+    width: 33%;
+}
+
+.clear{
+    clear: both;
 }
