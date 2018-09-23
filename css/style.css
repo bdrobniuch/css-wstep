@@ -209,3 +209,14 @@ input[title$="1"] {
     width: 300px;
     height: 300px;
 }
+
+.bacground {
+    height: 700px;
+    background-image: url('http://digitalspyuk.cdnds.net/18/16/980x490/landscape-1524058250-rick-and-morty-portal.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+/*    background-size: 100%;*/
+    color: aqua;
+background-size: cover;
+    background-attachment: fixed;
+}
