@@ -226,4 +226,9 @@ background-size: cover;
     height: 100px;
     overflow: auto;
     border: 2px dotted blue;
+    /*cokolwiek bysmy nie ustalili border i pading bez zmian defaultowo jest na content-box*/
+    box-sizing: border-box;
+    
 }
+
+
